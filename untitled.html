@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POS accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
+  <body id="body">
+    <header>
+      <div id="userImage"></div>
+      <span id="span">Good evening, Rukayya.</span>
+    </header>
+    <div id="div">
+      <p>Account number: <span class="span">3049579820</span>
+      <p>Account balance: <span class="span">$<span id="acctBal">50000</span></span></p>
+      <p id="opt">Choose activity</p>
+    </div>
+    <div class="opt f">
+      <p><i class="fa fa-exchange"></i></p>
+      <p><a href="trans.html">Transfer</a></p>
+    </div>
+    <div class="opt s">
+      <p><i class="fa fa-university"></i></p>
+      <p><a href="bal.html">Check balance</a></p>
+    </div>
+    <div class="opt t">
+      <p><i class="fa fa-history"></i></p>
+      <p><a href="hist">History</a></p>
+    </div>
+    <script src="untitled.js"></script>
+    <script>
+      const acctBal = document.getElementById('acctBal');
+      acctBal.innerHTML = localStorage.getItem('acctBal');
+    </script>
+  </body>
+</html>

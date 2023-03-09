@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POS accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  </head>
+  <body id="transBody">
+    <header id="header">
+      <a id="backBtn" href="untitled.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      <span>Transfer</span>
+    </header>
+    <main id="transMain">
+      <canvas id="canvas" width="100%" height="30" style="border:1px solid #d3d3d3;"></canvas>
+      <select id="acctNum" type="number" class="input">
+        <option value="">Choose Account</option>
+        <option value="0">Jason Dessen</option>
+        <option value="1">Amanda Smith</option>
+        <option value="2">Dave Wacowski</option>
+        <option value="3">Daniela Vargas</option>
+        <option value="4">Rieles Brown</option>
+        <option value="5">John Black</option>
+        <option value="6">Antwan Kentucky</option>
+        <option value="7">Charlie Brownwood</option>
+        <option value="8">Michael Jackson</option>
+      </select>
+      <input id="-acctNum" type="number" placeholder="Enter Account Number" class="input">
+      <input id="amt" type="number" placeholder="Enter Amount" class="input">
+      <select id="bankName" class="input">
+        <option value="">Choose Bank</option>
+        <option value="access">Access Bank</option>
+        <option value="eco">Ecobank</option>
+        <option value="fidel">Fidelity Bank</option>
+        <option value="first">First Bank</option>
+        <option value="gt">GT Bank</option>
+        <option value="key">Keystone Bank</option>
+        <option value="kuda">Kuda Bank</option>
+        <option value="monie">Moniepoint MFB</option>
+        <option value="opay">Opay</option>
+        <option value="palm">Palmpay</option>
+        <option value="polar">Polaris Bank</option>
+        <option value="uba">UBA</option>
+        <option value="union">Union Bank</option>
+        <option value="wema">Wema Bank</option>
+        <option value="stan">Stanbic IBTC</option>
+        <option value="sterling">Sterling Bank</option>
+      </select>
+      <p class="acctOwner"><span id="acctOwner"></span></p>
+      <input id="reason" type="text" placeholder="Reason" class="input">
+      <p id="enterBtn"><button>Enter</button></p>
+    </main>
+    <script src="untitled.js">
+    </script>
+    <script>
+      acctNum.addEventListener('change', b4check);
+      enterBtn.addEventListener('click', click2);
+      //enterBtn.addEventListener('click', click);
+    </script>
+  </body>
+</html>

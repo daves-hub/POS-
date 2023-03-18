@@ -24,7 +24,7 @@
         <option value="7">Charlie Brownwood</option>
         <option value="8">Michael Jackson</option>
       </select>
-      <input id="-acctNum" type="number" placeholder="Enter Account Number" class="input">
+      <input id="_acctNum" type="number" placeholder="Enter Account Number" class="input">
       <input id="amt" type="number" placeholder="Enter Amount" class="input">
       <select id="bankName" class="input">
         <option value="">Choose Bank</option>
@@ -49,12 +49,23 @@
       <input id="reason" type="text" placeholder="Reason" class="input">
       <p id="enterBtn"><button>Enter</button></p>
     </main>
-    <script src="untitled.js">
-    </script>
+    <script src="hist.js"></script>
+    <script src="titled.js"></script>
     <script>
-      acctNum.addEventListener('change', b4check);
+    const D = new Date();
+    const date = `${D.getDate()}-${D.getMonth()+1}-${D.getFullYear()}`;
+      setInterval(b4check, 500);
       enterBtn.addEventListener('click', click2);
-      //enterBtn.addEventListener('click', click);
+      enterBtn.addEventListener('click', () => {
+        const newTrans =  addTransaction(
+        localStorage.getItem('sender'),
+        localStorage.getItem('amt'),
+        localStorage.getItem('receiver'),
+        date,
+        localStorage.getItem('reason')
+        );
+      })
+      enterBtn.addEventListener('click', click);
     </script>
   </body>
 </html>

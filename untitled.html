@@ -11,7 +11,7 @@
       <span id="span">Good evening, Rukayya.</span>
     </header>
     <div id="div">
-      <p>Account number: <span class="span">3049579820</span>
+      <p>Account number: <span class="span" id="">3049579820</span>
       <p>Account balance: <span class="span">$<span id="acctBal">50000</span></span></p>
       <p id="opt">Choose activity</p>
     </div>
@@ -25,9 +25,10 @@
     </div>
     <div class="opt t">
       <p><i class="fa fa-history"></i></p>
-      <p><a href="hist">History</a></p>
+      <p><a href="hist.html">History</a></p>
     </div>
-    <script src="untitled.js"></script>
+    <script type="module" src="untitled.js"></script>
+    <script src="titled.js"></script>
     <script>
       const acctBal = document.getElementById('acctBal');
       acctBal.innerHTML = localStorage.getItem('acctBal');

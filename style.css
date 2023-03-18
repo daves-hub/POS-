@@ -48,7 +48,7 @@ header {
   background-size: cover;
   width: 3em;
   height: 3em;
-/*  z-index: 10;*/
+  /*  z-index: 10;*/
 }
 #div {
   margin: 1em 1em 1em 1em;
@@ -75,7 +75,6 @@ header {
 }
 p {
   margin: 3px;
-  text-transform: capitalize;
 }
 #opt {
   border-top: 1px solid #fff;
@@ -200,4 +199,9 @@ canvas {
   border-radius: 7px;
   background: rgb(100,0,120,.6);
   color: #101010;
+}
+#clearBtn {
+  margin: 3px;
+  font-size: 130%;
+  color: red;
 }

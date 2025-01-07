@@ -7,11 +7,15 @@
   </head>
   <body id="transBody">
     <header id="header">
+      <!-- Back button to navigate to the previous page -->
       <a id="backBtn" href="untitled.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+      <!-- Page title -->
       <span>Transfer</span>
     </header>
     <main id="transMain">
+      <!-- Canvas element for drawing -->
       <canvas id="canvas" width="100%" height="30" style="border:1px solid #d3d3d3;"></canvas>
+      <!-- Dropdown to select account -->
       <select id="acctNum" type="number" class="input">
         <option value="">Choose Account</option>
         <option value="0">Jason Dessen</option>
@@ -24,8 +28,11 @@
         <option value="7">Charlie Brownwood</option>
         <option value="8">Michael Jackson</option>
       </select>
+      <!-- Input field for account number -->
       <input id="_acctNum" type="number" placeholder="Enter Account Number" class="input">
+      <!-- Input field for amount -->
       <input id="amt" type="number" placeholder="Enter Amount" class="input">
+      <!-- Dropdown to select bank -->
       <select id="bankName" class="input">
         <option value="">Choose Bank</option>
         <option value="access">Access Bank</option>
@@ -45,10 +52,14 @@
         <option value="stan">Stanbic IBTC</option>
         <option value="sterling">Sterling Bank</option>
       </select>
+      <!-- Display account owner -->
       <p class="acctOwner"><span id="acctOwner"></span></p>
+      <!-- Input field for reason -->
       <input id="reason" type="text" placeholder="Reason" class="input">
+      <!-- Enter button -->
       <p id="enterBtn"><button>Enter</button></p>
     </main>
+    <!-- Including JavaScript files -->
     <script src="hist.js"></script>
     <script src="titled.js"></script>
     <script>

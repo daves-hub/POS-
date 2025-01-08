@@ -16,8 +16,8 @@ POS- is a web-based application for managing point-of-sale (POS) transactions. I
    - History: View the transaction history.
 
 ## Contributors
-- Dave Wacowski (https://github.com/daves-hub)
-
+- [daves-hub](https://github.com/daves-hub)
+- [Osalotioman](https://github.com/Osalotioman)
 ## Future Improvements
 - Add user authentication and authorization.
 - Implement a backend server for handling transactions.
